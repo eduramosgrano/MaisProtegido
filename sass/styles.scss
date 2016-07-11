@@ -149,10 +149,10 @@
 }
 
 header{
-  background-color: $brand-cliente;
+  background-color: $gray-lighter;
   height: $header-height;
   position: absolute;
-  top: 0;
+  top: 10px;
   left: 0;
   width: 100%;
   z-index: 9;
@@ -162,11 +162,14 @@ header{
   @include transition-property(height,padding-top);
   @include transition-duration(1s);
   .brand-intel, .brand-cliente{
-    padding-top: 20px;
+    //padding-top: 20px;
     @media (min-width: 769px) and (max-width: 1024px){
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
+  }
+  .brand-intel{
+    margin-top: -19px;
   }
   .brand-cliente{
     padding-top: 16px;
@@ -362,7 +365,6 @@ header{
   .formulario{
     background-color: $gray-lighter;
     padding-top: 100px;
-
     padding-bottom: 60px;
     height: 100%;
     opacity: 0;
