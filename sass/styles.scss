@@ -152,7 +152,7 @@ header{
   background-color: $gray-lighter;
   height: $header-height;
   position: absolute;
-  top: 10px;
+  top: 14px;
   left: 0;
   width: 100%;
   z-index: 9;
@@ -217,13 +217,30 @@ header{
   }
 
   .texto{
-    padding-top:  $header-height+60px;
+    padding-top:  $header-height+45px;
     margin-bottom: 60px;
     @media (min-width: $screen-sm-min) {
       margin-bottom: 0;
     }
     @media (min-width: 768px) and (max-width:1023px){
       margin-bottom: 60px;
+    }
+    .row{
+      margin: 0;
+      .col-md-2{
+        padding: 0 !important;
+        font-size: 0.7em;
+        text-align: center;
+        padding: 1px !important;
+        img{
+          margin-bottom: 5px;
+        }
+      }
+      .col-md-12{
+        padding: 0 !important;
+        text-align: right;
+        margin-top: 10px;
+      }
     }
     h3{
       span{
@@ -240,7 +257,7 @@ header{
   @media (min-width: $screen-sm-min) {
     position: absolute;
     width: 100%;
-    height: 200px;
+    height: 225px;
     z-index: 8;
     bottom: 0;
   }
@@ -258,6 +275,7 @@ header{
     background-color: $brand-cliente;
     height: 100%;
     position: relative;
+    color: $body-bg;
 
     .row{
 
@@ -267,13 +285,35 @@ header{
       @media (min-width: 768px) and (max-width:1023px){
         margin: 0;
       }
+      .chamada{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        h2{
+          color: $body-bg;
+          text-align: center;
+          margin: 0;
+          padding: 0;
+          text-transform: uppercase;
+        }
+      }
     }
+    .obslegais{
+      font-size: 0.5em;
+      padding-left: 40px;
+      padding-top: 5px;
+      span{
+        font-size: 0.5em;
+        display: block;
+        float: left;
+      }
+    }
+
     //overflow: hidden;
     .item{
       color: $body-bg;
       text-align: center;
       padding: 0 !important;
-      padding-top: 20px !important;
+      //padding-top: 20px !important;
       opacity: 0;
       @include transition-property(opacity);
       @include transition-duration(1s);
@@ -302,38 +342,38 @@ header{
         margin: 3px;
       }
 
-      &::before{
-        content: '+';
-        position: absolute;
-        right: -15px;
-        top: 30px;
-        font-size: 64px;
-        z-index: 3;
-      }
-
-      &.last{
-        &::before{
-          content: '';
-        }
-      }
+      // &::before{
+      //   content: '+';
+      //   position: absolute;
+      //   right: -15px;
+      //   top: 30px;
+      //   font-size: 64px;
+      //   z-index: 3;
+      // }
+      //
+      // &.last{
+      //   &::before{
+      //     content: '';
+      //   }
+      // }
 
     }
-    #item1{
-      &:before{
-        content: '';
-
-
-      }
-
-      @media (min-width: $screen-sm-min) {
-        &:before{
-          content: '+';
-          @media (min-width: 768px) and (max-width:1024px){
-            content: '';
-          }
-        }
-      }
-    }
+    // #item1{
+    //   &:before{
+    //     content: '';
+    //
+    //
+    //   }
+    //
+    //   @media (min-width: $screen-sm-min) {
+    //     &:before{
+    //       content: '+';
+    //       @media (min-width: 768px) and (max-width:1024px){
+    //         content: '';
+    //       }
+    //     }
+    //   }
+    // }
 
     .seta{
       position: absolute;
@@ -401,11 +441,16 @@ header{
 
 footer{
   color: $body-bg;
-  padding-top: 30px;
+  //padding-top: 30px;
   width: 100%;
   height: $header-height;
   text-align: center;
-  background-color: $brand-cliente;
+  background-color: $gray-lighter;
+  //margin-top: 20px;
+  position: relative;
+  img{
+    margin-top: -20px;
+  }
 }
 
 // Internas
@@ -640,6 +685,12 @@ footer{
   }
   .termos{
     font-size: 0.75em;
+    .col-md-6{
+      margin-bottom: 6px;
+    }
+    select{
+      border: 1px solid;
+    }
   }
   .btn-lg{
     @media (min-width: $screen-sm-min) {
