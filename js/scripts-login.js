@@ -12,7 +12,7 @@
 
   //Animation Intro
   function aniIntro(){
-    //setTimeout(function(){ document.getElementById("item1").style.opacity = "1"; }, 500);
+    setTimeout(function(){ document.getElementById("item1").style.opacity = "1"; }, 500);
     setTimeout(function(){ document.getElementById("item2").style.opacity = "1"; }, 1000);
     setTimeout(function(){ document.getElementById("item3").style.opacity = "1"; }, 1500);
     //setTimeout(function(){ document.getElementById("formulario").style.opacity = "1"; }, 2000);
