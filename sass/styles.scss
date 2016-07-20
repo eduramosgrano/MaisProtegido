@@ -12,9 +12,9 @@
 
 //Correções
 .container-fluid{
-  @media (min-width: 768px) and (max-width:991px){
-  padding: 0;
-  }
+  // @media (min-width: 768px) and (max-width:991px){
+  // padding: 0;
+  // }
 
 }
 .index{
@@ -239,8 +239,8 @@ header{
   height: auto;
   @media (min-width: $screen-sm-min) {
     height: 100vh;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    margin-left: -80px !important;
+    margin-right: -80px !important;
   }
   @media (min-width: $screen-md-min) {
     height: 100vh;
@@ -878,4 +878,198 @@ footer{
             text-align: center;
         }
     }
+  }
+
+
+
+  // STYLE PG CONFIGURACAO
+
+  header.container-fluid{
+    @media (min-width: $screen-sm-min){
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+    @media (min-width: $screen-md-min){
+      padding-left: 80px !important;
+      padding-right: 80px !important;
+    }
+  }
+
+  .configuracao{
+    padding-top: 160px;
+    padding-left: 40px;
+    padding-right: 40px;
+    .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9,
+    .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    .row{
+      margin-left: -40px;
+      margin-right: -40px;
+    }
+
+    .scrollToTop{
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 80px;
+      height: 80px;
+      background-color: $brand-primary;
+      @include opacity(0.4);
+      z-index: 999999;
+      background-image: url('../images/setaToTop.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      cursor: pointer;
+
+
+    }
+
+    .inicio{
+      background-color: $gray-lighter;
+      margin-bottom: 60px;
+      padding-left: 40px;
+      padding-right: 40px;
+      .titulo{
+        background-color: $brand-danger;
+        text-transform: uppercase;
+        padding-bottom: 0 !important;
+        h6{
+          color: $body-bg !important;
+        }
+
+      }
+      .col-xs-12{
+        margin-bottom: 30px;
+        a{
+          color: $brand-danger;
+          text-transform: uppercase;
+        }
+        h6{
+          text-transform: uppercase;
+          color: $brand-danger;
+        }
+        select{
+          border: 1px solid $gray-dark;
+        }
+      }
+    @media (min-width:$screen-sm-min) {
+      display: block;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
+
+      .row{
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .titulo{
+        margin-top: 20px;
+
+      }
+      .col-sm-8{
+            border-left: 1px solid $brand-danger;
+        }
+      }
+      .fotoProduto{
+        width: 150px;
+      }
+
+      @media (min-width:$screen-md-min){
+        .col-sm-4, .col-sm-8{
+              border-left: 1px solid $brand-danger;
+          }
+      }
+    }
+
+    .menu{
+      text-align: center;
+      margin-bottom: 60px;
+      .titulo{
+        text-transform: uppercase;
+        color: $brand-danger;
+        margin-bottom: 30px;
+      }
+      a{
+        color: $text-color;
+        text-transform: uppercase;
+        @include transition-property(color);
+        @include transition-duration(1s) ;
+        cursor: pointer;
+        display: block;
+        margin-bottom: 30px;
+        &:hover{
+          text-decoration: none;
+          color: $brand-danger;
+        }
+      }
+    }
+
+
+    .paginas{
+      .col-xs-12{
+        background-color: $gray-lighter;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        border-bottom: 2px solid $body-bg;
+        img{
+          margin: 0 auto;
+        }
+        h2{
+          color: $brand-danger;
+          text-transform: uppercase;
+        }
+        button{
+          width: 100%;
+        }
+        .bandeiras, .senhaAtualize{
+          margin-bottom: 20px;
+        }
+        .senhaAtualize{
+          border-bottom: 2px solid $brand-danger;
+          height: 40px;
+          color: $brand-danger;
+          cursor: pointer;
+        }
+        .btn-default{
+          color: $body-bg;
+          text-transform: uppercase;
+          cursor: pointer;
+        }
+        select,textarea{
+          border: 1px solid $text-color;
+          margin-bottom: 20px;
+        }
+        @media (min-width: $screen-sm-min) {
+          img{
+            float: left;
+          }
+          h2{
+            height: 70px;
+            margin-left: 110px;
+          }
+        }
+      }
+    }
+    .inputCodSeguranca,.inputNome,.inputSobrenome{
+      display: none;
+      @include opacity(0);
+      @include transition-property(opacity);
+      @include transition-duration(1s);
+      &.active{
+        @include opacity(1);
+        display: block;
+      }
+    }
+    .modal{
+      .modal-header h2{
+        text-transform: uppercase;
+        color: $brand-danger;
+      }
+    }
+
+
+
   }

@@ -15,6 +15,8 @@
 <!-- Bootstrap -->
 <link rel="stylesheet" href="stylesheets/styles.css">
 
+
+
 <body>
 
     <header id="header" class="container-fluid">
@@ -23,19 +25,293 @@
                 <img src="images/logoMaisProtegido.png" alt="" />
             </div>
             <div class="col-md-6 col-xs-6 brand-intel ">
-
+                Configurações | Sair
             </div>
         </div>
     </header>
 
     <section class="container-fluid configuracao">
+      <div class="scrollToTop"></div>
 
+      <div class="row saudacao">
+        <div class="div col-xs-12 col-sm-12 col-md-12">
+          <h2>Olá <strong>Roberto,</strong></h2>
+        </div>
+      </div>
+      <div class="row inicio">
+        <div class="row">
+          <div class="div col-xs-12 col-sm-4 col-md-2 titulo">
+            <h6>O seu plano atual</h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-4">
+            <img src="images/LogoMcAfee.png" alt="" class="img-responsive fotoProduto" >
+            <h4> Para 3 dispositivos</h4>
+            <a href="">Download do App</a>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-3">
+            <h6>Mais detalhes</h6>
+            <ul>
+              <li>90 dias de trial</li>
+              <li>Plano mensal</li>
+              <li>Valor R$ 9,99/mês</li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-5">
+            <h6>Altere o seu plano</h6>
+            <p>Você ainda tem 85 dias grátis!</p>
+            <select class="form-control">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- MENU -->
+      <div class="row menu">
+        <div class="col-xs-12 titulo">
+          MENU
+        </div>
+        <div class="col-sm-3">
+          <a href="#cadastro">
+            <img src="images/iconCadastro.png" alt="">
+            <p>Dados de Cadastro</p>
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="#faturamento">
+            <img src="images/iconFaturamento.png" alt="">
+            <p>Dados de Faturamento</p>
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="#termos">
+            <img src="images/iconTermos.png" alt="">
+            <p>Termos de Uso</p>
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="#cancelamento">
+            <img src="images/iconCancelamento.png" alt="">
+            <p>Cancelamento</p>
+          </a>
+        </div>
+      </div>
+
+
+      <!-- PAGINAS -->
+
+      <div id="cadastro" class="row paginas">
+        <div class="col-xs-12">
+          <img src="images/iconCadastro.png" alt="">
+          <h2>DADOS DE CADASTRO DA LICENÇA</h2>
+          <p>
+              Clique nos dados para edita-los
+          </p>
+          <form>
+            <div class="row">
+              <div class="col-sm-6">
+                <div id="form-group" class="form-group">
+                    <label for="Nome">
+                        <span>Nome</span>
+                    </label>
+                    <input type="text" class="form-control" id="Senha">
+                </div>
+                <div id="form-group" class="form-group">
+                    <label for="Sobrenome">
+                        <span>Sobrenome</span>
+                    </label>
+                    <input type="text" class="form-control" id="Senha">
+                </div>
+                <div id="form-group" class="form-group">
+                    <label for="Email">
+                        <span>Email</span>
+                    </label>
+                    <input type="text" class="form-control" id="Senha">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div id="form-group" class="form-group">
+                    <label for="CPF">
+                        <span>CPF</span>
+                    </label>
+                    <input type="text" class="form-control" id="Senha">
+                </div>
+                <div class="senhaAtualize">
+                  Atualize sua senha McAfee
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-6">
+                <button type="submit" class="btn btn-default">Atualizar Dados</button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+        <div id="faturamento" class="col-xs-12">
+          <img src="images/iconFaturamento.png" alt="">
+          <h2>Dados de faturamento</h2>
+          <p>
+            Clique nos dados para edita-los
+          </p>
+          <form >
+            <div class="row">
+              <div class="col-sm-6">
+                <div id="form-group" class="form-group">
+                    <label for="Nome">
+                        <span>Número</span>
+                    </label>
+                    <input type="text" class="form-control" id="cardNumero">
+                </div>
+                <div id="form-group" class="form-group">
+                    <label for="Validade">
+                        <span>Validade</span>
+                    </label>
+                    <input type="text" class="form-control" id="Senha">
+                </div>
+                <div id="form-group" class="form-group inputCodSeguranca">
+                    <label for="Nome">
+                        <span>Codigo de Segurança</span>
+                    </label>
+                    <input type="text" class="form-control" >
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div id="form-group" class="form-group inputNome">
+                    <label for="Nome">
+                        <span>Nome, como está no cartão</span>
+                    </label>
+                    <input type="text" class="form-control" >
+                </div>
+                <div id="form-group" class="form-group inputSobrenome">
+                    <label for="Nome">
+                        <span>Sobrenome, como está no cartão</span>
+                    </label>
+                    <input type="text" class="form-control" >
+                </div>
+                <div id="form-group" class="bandeiras">
+                  <img src="images/bandeiras/VisaAtivo.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-6">
+              <button type="submit" class="btn btn-default" id="btnCartao">Trocar Cartão</button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Cartão Modal -->
+        <!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h2>Alterar Cartão</h2>
+              </div>
+              <div class="modal-body">
+                            <div id="form-group" class="form-group">
+                                <label for="NomeCartao">
+                                    <span>Nome, como está no cartão</span>
+                                </label>
+                                <input type="text" class="form-control" id="Nome">
+                            </div>
+                            <div id="form-group" class="form-group">
+                                <label for="Senha">
+                                    <span>Sobrenome, como está no cartão</span>
+                                </label>
+                                <input type="text" class="form-control" id="Nome">
+                            </div>
+                            <div id="form-group" class="form-group">
+                                <label for="Senha">
+                                    <span>Número do cartão</span>
+                                </label>
+                                <input type="text" class="form-control" id="Nome">
+                            </div>
+                            <div id="form-group" class="form-group">
+                                <label for="Senha">
+                                    <span>Data de validade</span>
+                                </label>
+                                <input type="text" class="form-control" id="date">
+                            </div>
+                            <img src="images/bandeiras/Visa.png" alt="" />
+                            <img src="images/bandeiras/redecard.png" alt="" />
+                            <img src="images/bandeiras/Master.png" alt="" /><br>
+                            <img src="images/bandeiras/hipercard.png" alt="" />
+                            <img src="images/bandeiras/Dinners.png" alt="" />
+                            <img src="images/bandeiras/Cielo.png" alt="" />
+                            <div id="form-group" class="form-group">
+                                <label for="Codigo">
+                                    <span>Código de segurança</span>
+                                </label>
+                                <input type="password" class="form-control" id="Senha2">
+                            </div>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Salvar</button>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <div id="termos" class="col-xs-12">
+          <img src="images/iconTermos.png" alt="">
+          <h2>Termos de uso</h2>
+          <textarea class="form-control" rows="12" readonly>
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+          </textarea>
+        </div>
+
+        <div id="cancelamento" class="col-xs-12">
+          <img src="images/iconCancelamento.png" alt="">
+          <h2>Cancelamento</h2>
+          <div class="row">
+            <div class="col-sm-6">
+              <p>Quando clicar no botão “cancelar” você está ciente dos seguintes termos:</p>
+              <textarea class="form-control" rows="3" readonly>
+                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+              </textarea>
+            </div>
+            <div class="col-sm-6">
+              <p>Qual o motivo do cancelamento?</p>
+              <select class="form-control">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-6">
+                <button type="submit" class="btn btn-default">Cancelar Assinatura</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
     </section>
 
 
     <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" ></script>
+        <!-- <script src="bootstrap.min.js" charset="utf-8"></script> -->
+        <script src="bootstrap/modal.js" charset="utf-8"></script>
+        <script src="js/scriptsCofiguracao.js" charset="utf-8"></script>
     <!-- <script src="https://code.createjs.com/preloadjs-0.6.2.min.js"></script> -->
     <!-- <script src="js/classie.js"></script> -->
     <!-- <script src="js/velocity.min.js"></script> -->
