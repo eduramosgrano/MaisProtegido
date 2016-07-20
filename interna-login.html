@@ -35,7 +35,7 @@
                 <div class="row">
                     <div class="col-md-4 col-md-offset-4 col-xs-12 box-etapas">
                         <div class="etapas text-center">
-                            etapa
+                            Etapa
                             <ul>
                                 <li id="p1" class="active">1</li>
                                 <li id="p2">2</li>
@@ -49,7 +49,7 @@
                 <div id="etapa1" class="row etapa1">
                     <div class="col-md-4 col-xs-12">
                         <h2>Olá <strong>César,</strong></h2>
-                        <p>Confira seus dados, se preciso atualize-os agora:</p>
+                        <p>Confira seus dados. Se necessário, atualize-os agora:  </p>
                         <form class="form-control">
                             <div id="form-group" class="form-group">
                                 <label for="Nome">
@@ -63,19 +63,19 @@
                                 </label>
                                 <input type="email" class="form-control" id="Email" Placeholder="email@email.com.br">
                             </div>
-                            <div id="form-group" class="form-group">
+                            <!-- <div id="form-group" class="form-group">
                                 <label for="Endereço">
                                     <span>Endereço</span>
                                 </label>
                                 <input type="text" class="form-control" id="Senha" Placeholder="R. Nome, 22 - Moema - São Paulo - SP">
-                            </div>
+                            </div> -->
                         </form>
                     </div>
                     <div class="col-md-4 col-md-offset-2 col-xs-12 col2">
                         <div class="logoMacAfee">
                             <img src="images/LogoMcAfee.png" alt="">
                         </div>
-                        <h2>Cadastre sua <br><span>senha McAfee</span></h2>
+                        <h2>Cadastre a senha da sua licença</h2>
                         <div class="form-control">
                             <div id="form-group" class="form-group">
                                 <label for="Senha">
@@ -96,7 +96,7 @@
                 <div id="etapa2" class="row etapa2">
                     <div class="col-md-4 col-xs-12">
                         <h2><strong>Roberto,</strong></h2>
-                        <p>você têm:</p>
+                        <p>você tem:</p>
                         <div class="premios">
                             <div id='item1' class="col-md-12 item">
                                 <img src="images/500km.png" class="img-responsive" alt="">
@@ -112,10 +112,21 @@
                         </div>
                     </div>
                     <div class="col-md-8 col-xs-12">
-                        <h2>Informe seus dados de pagamento</h2>
+                          <h2>Selecione o seu plano:</h2>
+                          <select class="form-control">
+
+                            <option value="">até 3 equipamentos - R$9,99 c/ 90 dias grátis</option>
+                            <option value="">até 5 equipamentos - R$14,99 c/ 90 dias grátis</option>
+                            <option value="">até 10 equipamentos - R$24,99 c/ 90 dias grátis</option>
+                            <option value="">até 20 equipamentos - R$44,99 c/ 90 dias grátis</option>
+                            <option value="">até 50 equipamentos - R$84,99 c/ 90 dias grátis</option>
+                            <option value="">até 100 equipamentos - R$164,99 c/ 90 dias grátis</option>
+
+                          </select>
+
+                        <h3>Informe seus dados de pagamento</h3>
                         <p><strong>Não se preocupe, nós enviaremos um
-lembrete por email 3 dias antes do
-fim do seu mês grátis.</strong></p>
+lembrete por email 3 dias antes do fim do seu mês grátis.</strong></p>
                         <p class="obs">• Sem compromisso, cancele quando quiser</p>
                         <p class="obs">• Você só será cobrado quando seu mês grátis chegar ao fim, em DD/MM/YY</p>
 
@@ -126,7 +137,7 @@ fim do seu mês grátis.</strong></p>
                                         <div class="col-sm-6 col-md-6">
                                             <div id="form-group" class="form-group">
                                                 <label for="NomeCartao">
-                                                    <span>Nome como está no cartão</span>
+                                                    <span>Nome, como está no cartão</span>
                                                 </label>
                                                 <input type="text" class="form-control" id="Nome">
                                             </div>
@@ -134,7 +145,7 @@ fim do seu mês grátis.</strong></p>
                                         <div class=" col-sm-6 col-md-6">
                                             <div id="form-group" class="form-group">
                                                 <label for="Senha">
-                                                    <span>Sobrenome como está no cartão</span>
+                                                    <span>Sobrenome, como está no cartão</span>
                                                 </label>
                                                 <input type="text" class="form-control" id="Nome">
                                             </div>
@@ -160,12 +171,18 @@ fim do seu mês grátis.</strong></p>
                                 <div class="col-md-4">
                                     <div class="row">
                                         <div class="bandeira col-sm-6 col-md-12">
-                                            bandeiras
+                                            <img src="images/bandeiras/Visa.png" alt="" />
+                                            <img src="images/bandeiras/redecard.png" alt="" />
+                                            <img src="images/bandeiras/Master.png" alt="" /><br>
+                                            <img src="images/bandeiras/hipercard.png" alt="" />
+                                            <img src="images/bandeiras/Dinners.png" alt="" />
+                                            <img src="images/bandeiras/Cielo.png" alt="" />
+
                                         </div>
                                         <div class="col-sm-6 col-md-12">
                                             <div id="form-group" class="form-group">
                                                 <label for="Codigo">
-                                                    <span>Condigo de segurança</span>
+                                                    <span>Código de segurança</span>
                                                 </label>
                                                 <input type="password" class="form-control" id="Senha2">
                                             </div>
@@ -174,15 +191,15 @@ fim do seu mês grátis.</strong></p>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-12 termos">
-                                    <p class="visible-xs">Ao clicar no botão "Iniciar assinatura" abaixo, você concorda com os <a href="">Termos de uso</a></p>
-                                    <p class="hidden-xs">Ao clicar no botão "Iniciar assinatura" abaixo, você concorda com os Termos de uso, com a Declaração de privacidade, e com o seguinte:
-                                        <p class="hidden-xs">• Você tem mais de 18 anos.</p>
-                                        <p class="hidden-xs">• Você pode cancelar quando quiser durante seu primeiro mês sem ser cobrado Para cancelar, acesse sua Conta e clique em "Cancelar".</p>
-                                        <p class="hidden-xs">• A McAfee automaticamente dará continuidade à sua assinatura quando seu período de utilização gratuita terminar e cobrará o preço da assinatura (atualmente R$xx,xx) da sua forma de pagamento mensalmente até você
+                                <div class="col-md-8 termos">
+                                    <p class="visible-xs">Ao clicar no botão "Resgatar" abaixo, você concorda com os <a href="">Termos de uso</a></p>
+                                    <p class="hidden-xs">Ao clicar no botão "Resgatar" abaixo, você concorda com os Termos de uso, com a Declaração de privacidade, e com o seguinte:
+                                        <!-- <p class="hidden-xs">• Você tem mais de 18 anos.</p> -->
+                                        <p class="hidden-xs">• Você pode cancelar quando quiser durante seu primeiro mês sem ser cobrado. Para cancelar, acesse sua Conta e clique em "Cancelar".</p>
+                                        <p class="hidden-xs">• A McAfee automaticamente dará continuidade à sua assinatura quando seu período de utilização gratuita terminar e cobrará o preço da assinatura da sua forma de pagamento mensalmente até você
                                             cancelar. Não há reembolsos ou créditos por meses parciais.</p>
-                                        <div class="row">
-                                          <div class="col-md-6">
+                                        <!-- <div class="row"> -->
+                                        <!--   <div class="col-md-6">
                                             <h5>Selecione o seu plano:</h5>
                                             <select class="form-control">
 
@@ -194,11 +211,12 @@ fim do seu mês grátis.</strong></p>
                                               <option value="">até 100 equipamentos - R$164,99 c/ 90 dias grátis</option>
 
                                             </select>
-                                          </div>
-                                          <div class="col-md-6">
+                                          </div> -->
+                                    </div>
+                                          <div class="col-md-4">
                                             <button type="submit" id="btnResgatar" class="btn btn-danger btn-lg">Resgatar</button>
                                           </div>
-                                        </div>
+                                  </div>
                                 </div>
                             </div>
                         </div>
