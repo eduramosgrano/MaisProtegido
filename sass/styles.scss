@@ -531,7 +531,22 @@ header{
       padding-bottom: 60px;
     }
 
-
+    .alert{
+      margin: 0;
+      padding: 0;
+      color: $body-bg;
+      background-color: $brand-cliente;
+      //@include border-radius(0);
+      border-radius: 0;
+      display: block;
+      height: 0;
+      opacity: 0;
+      &.open{
+        opacity: 1;
+        height: 40px;
+        padding: 10px;
+      }
+    }
     .form-inline, .form-control{
       margin-bottom: 20px;
       width: 100%;
@@ -553,26 +568,7 @@ header{
         margin-bottom: 0;
       }
     }
-    .alert{
-      padding: 0;
-      background: $brand-cliente;
-      color: $body-bg;
-      border: 1px solid $brand-cliente;
-      border-radius: 0;
-      opacity: 0;
-      height: 0;
-      display: block;
-      overflow: hidden;
-      margin-bottom: 0;
-      &.open{
-        padding: 5px;
-        opacity: 1;
-        height: auto;
-        margin-bottom: 20px;
-      }
-    }
   }
-
 }
 
 footer{
