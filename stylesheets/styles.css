@@ -9197,7 +9197,7 @@ header.load {
 .login .oferta .obslegais {
   font-size: 0.7em;
   padding-top: 5px;
-  text-align: center;
+  text-align: left;
 }
 /* line 395, ../sass/styles.scss */
 .login .oferta .obslegais span {
