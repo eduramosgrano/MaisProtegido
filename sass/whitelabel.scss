@@ -55,6 +55,10 @@ html,body{
 
     svg{
       width: 100%;
+      path{
+        fill: white;
+      }
+
     }
   }
   &.active{

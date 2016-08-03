@@ -8857,21 +8857,25 @@ html .container-fluid, body .container-fluid {
 .videoBox .close svg {
   width: 100%;
 }
-/* line 60, ../sass/whitelabel.scss */
+/* line 58, ../sass/whitelabel.scss */
+.videoBox .close svg path {
+  fill: white;
+}
+/* line 64, ../sass/whitelabel.scss */
 .videoBox.active {
   display: block;
 }
 
-/* line 64, ../sass/whitelabel.scss */
+/* line 68, ../sass/whitelabel.scss */
 .videosMenu {
   background-color: #333333;
 }
-/* line 66, ../sass/whitelabel.scss */
+/* line 70, ../sass/whitelabel.scss */
 .videosMenu .video {
   padding: 20px;
   /* Small devices (tablets, 768px and up) */
 }
-/* line 69, ../sass/whitelabel.scss */
+/* line 73, ../sass/whitelabel.scss */
 .videosMenu .video .thumb {
   background-color: #eeeeee;
   height: 124px;
@@ -8879,7 +8883,7 @@ html .container-fluid, body .container-fluid {
   overflow: hidden;
   cursor: pointer;
 }
-/* line 75, ../sass/whitelabel.scss */
+/* line 79, ../sass/whitelabel.scss */
 .videosMenu .video .thumb::before {
   content: '';
   position: absolute;
@@ -8890,25 +8894,25 @@ html .container-fluid, body .container-fluid {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
-/* line 85, ../sass/whitelabel.scss */
+/* line 89, ../sass/whitelabel.scss */
 .videosMenu .video .thumb.v1, .videosMenu .video .thumb.v2, .videosMenu .video .thumb.v3 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 90, ../sass/whitelabel.scss */
+/* line 94, ../sass/whitelabel.scss */
 .videosMenu .video .thumb.v1 {
   background-image: url("../images/whitelabel/thumb1.jpg");
 }
-/* line 93, ../sass/whitelabel.scss */
+/* line 97, ../sass/whitelabel.scss */
 .videosMenu .video .thumb.v2 {
   background-image: url("../images/whitelabel/thumb2.jpg");
 }
-/* line 96, ../sass/whitelabel.scss */
+/* line 100, ../sass/whitelabel.scss */
 .videosMenu .video .thumb.v3 {
   background-image: url("../images/whitelabel/thumb3.jpg");
 }
-/* line 99, ../sass/whitelabel.scss */
+/* line 103, ../sass/whitelabel.scss */
 .videosMenu .video .thumb .titulo {
   width: 100%;
   color: white;
@@ -8926,12 +8930,12 @@ html .container-fluid, body .container-fluid {
   /* Small devices (desktops, 992px and up) */
 }
 @media (min-width: 992px) {
-  /* line 99, ../sass/whitelabel.scss */
+  /* line 103, ../sass/whitelabel.scss */
   .videosMenu .video .thumb .titulo {
     bottom: -40px;
   }
 }
-/* line 116, ../sass/whitelabel.scss */
+/* line 120, ../sass/whitelabel.scss */
 .videosMenu .video .thumb .play {
   width: 50px;
   height: 50px;
@@ -8947,70 +8951,70 @@ html .container-fluid, body .container-fluid {
   /* Small devices (desktops, 992px and up) */
 }
 @media (min-width: 992px) {
-  /* line 116, ../sass/whitelabel.scss */
+  /* line 120, ../sass/whitelabel.scss */
   .videosMenu .video .thumb .play {
     bottom: -40px;
     top: 35px;
   }
 }
-/* line 131, ../sass/whitelabel.scss */
+/* line 135, ../sass/whitelabel.scss */
 .videosMenu .video .thumb .play svg {
   width: 100%;
   height: auto;
 }
-/* line 138, ../sass/whitelabel.scss */
+/* line 142, ../sass/whitelabel.scss */
 .videosMenu .video .thumb:hover .titulo {
   bottom: 0;
 }
-/* line 141, ../sass/whitelabel.scss */
+/* line 145, ../sass/whitelabel.scss */
 .videosMenu .video .thumb:hover .play {
   top: -48px;
   margin-left: -90px;
   width: 180px;
 }
 @media (min-width: 768px) {
-  /* line 151, ../sass/whitelabel.scss */
+  /* line 155, ../sass/whitelabel.scss */
   .videosMenu .video:first-child {
     padding-right: 0;
     padding-left: 40px;
   }
-  /* line 155, ../sass/whitelabel.scss */
+  /* line 159, ../sass/whitelabel.scss */
   .videosMenu .video:last-child {
     padding-left: 0;
     padding-right: 40px;
   }
 }
 
-/* line 162, ../sass/whitelabel.scss */
+/* line 166, ../sass/whitelabel.scss */
 .produto {
   background-color: #eeeeee;
 }
-/* line 164, ../sass/whitelabel.scss */
+/* line 168, ../sass/whitelabel.scss */
 .produto .apresentacao {
   padding-top: 40px;
 }
-/* line 167, ../sass/whitelabel.scss */
+/* line 171, ../sass/whitelabel.scss */
 .produto .apresentacao .row {
   padding-bottom: 40px;
   /* Small devices (tablets, 768px and up) */
 }
 @media (min-width: 768px) {
-  /* line 167, ../sass/whitelabel.scss */
+  /* line 171, ../sass/whitelabel.scss */
   .produto .apresentacao .row {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
-/* line 175, ../sass/whitelabel.scss */
+/* line 179, ../sass/whitelabel.scss */
 .produto .apresentacao .item {
   padding-bottom: 20px;
 }
-/* line 177, ../sass/whitelabel.scss */
+/* line 181, ../sass/whitelabel.scss */
 .produto .apresentacao .item img {
   margin: 0 auto;
   margin-bottom: 6px;
 }
-/* line 183, ../sass/whitelabel.scss */
+/* line 187, ../sass/whitelabel.scss */
 .produto .descontos {
   background-color: #0070c5;
   padding-top: 40px;
@@ -9018,84 +9022,84 @@ html .container-fluid, body .container-fluid {
   height: 100%;
   color: #fff;
 }
-/* line 189, ../sass/whitelabel.scss */
+/* line 193, ../sass/whitelabel.scss */
 .produto .descontos img {
   margin: 0 auto;
   margin-bottom: 20px;
 }
-/* line 193, ../sass/whitelabel.scss */
+/* line 197, ../sass/whitelabel.scss */
 .produto .descontos .juridico {
   font-size: 10px;
 }
-/* line 195, ../sass/whitelabel.scss */
+/* line 199, ../sass/whitelabel.scss */
 .produto .descontos .juridico span {
   margin-right: 4px;
   font-size: 5px;
 }
 
-/* line 202, ../sass/whitelabel.scss */
+/* line 206, ../sass/whitelabel.scss */
 .produtoMaisInfos {
   padding-top: 60px;
   padding-bottom: 40px;
   background-color: #eeeeee;
 }
-/* line 206, ../sass/whitelabel.scss */
+/* line 210, ../sass/whitelabel.scss */
 .produtoMaisInfos h2 {
   text-transform: uppercase;
   color: #0070c5;
 }
-/* line 210, ../sass/whitelabel.scss */
+/* line 214, ../sass/whitelabel.scss */
 .produtoMaisInfos td {
   vertical-align: middle !important;
 }
-/* line 214, ../sass/whitelabel.scss */
+/* line 218, ../sass/whitelabel.scss */
 .produtoMaisInfos tr > td:last-child {
   text-align: center;
   background-image: url("../images/whitelabel/sombra.png");
   background-position: left;
   background-repeat: repeat-y;
 }
-/* line 220, ../sass/whitelabel.scss */
+/* line 224, ../sass/whitelabel.scss */
 .produtoMaisInfos .cabecalho {
   background-color: transparent !important;
   border-top: none;
   padding-bottom: 20px !important;
 }
-/* line 224, ../sass/whitelabel.scss */
+/* line 228, ../sass/whitelabel.scss */
 .produtoMaisInfos .cabecalho td {
   background-image: none !important;
 }
 
-/* line 230, ../sass/whitelabel.scss */
+/* line 234, ../sass/whitelabel.scss */
 .parceiros {
   padding-top: 40px;
   padding-bottom: 60px;
   /* Small devices (tablets, 768px and up) */
 }
 @media (min-width: 768px) {
-  /* line 230, ../sass/whitelabel.scss */
+  /* line 234, ../sass/whitelabel.scss */
   .parceiros {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
-/* line 240, ../sass/whitelabel.scss */
+/* line 244, ../sass/whitelabel.scss */
 .parceiros h2 {
   padding-bottom: 40px;
   text-transform: uppercase;
   color: #0070c5;
 }
-/* line 245, ../sass/whitelabel.scss */
+/* line 249, ../sass/whitelabel.scss */
 .parceiros .box {
   padding: 10px;
 }
-/* line 248, ../sass/whitelabel.scss */
+/* line 252, ../sass/whitelabel.scss */
 .parceiros .box .thumb {
   background-color: #eeeeee;
   border: 1px solid #777777;
   padding: 10px;
 }
-/* line 252, ../sass/whitelabel.scss */
+/* line 256, ../sass/whitelabel.scss */
 .parceiros .box .thumb img {
   border: 4px solid white;
   width: 100%;
