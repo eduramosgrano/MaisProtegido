@@ -1,0 +1,262 @@
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
+
+// Import Bootstrap for Sass
+@import "bootstrap";
+
+// Import Fonts
+@import "fonts";
+
+@import "../stylesheets/animate.css";
+
+html,body{
+  height: 100%;
+  position: relative;
+  .container-fluid{
+    height: 100%;
+  }
+}
+.bannerPrincipal{
+  height: 80%;
+  background-color: $gray-lighter;
+  position: relative;
+  z-index: 1;
+  background-image: url('../images/whitelabel/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  .header{
+    position: absolute;
+    text-align: center;
+    margin-top: 3%;
+  }
+}
+.videoBox{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 9;
+  display: none;
+  iframe{
+
+  }
+  .close{
+    width: 96px;
+    padding: 20px;
+    z-index: 9;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    svg{
+      width: 100%;
+      path{
+        fill: white;
+      }
+
+    }
+  }
+  &.active{
+    display: block;
+  }
+}
+.videosMenu{
+  background-color: $gray-darker;
+  .video{
+    padding: 20px;
+
+    .thumb{
+      background-color: $gray-lighter;
+      height: 124px;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 1;
+      }
+      &.v1,&.v2,&.v3{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      &.v1{
+        background-image: url('../images/whitelabel/thumb1.jpg');
+      }
+      &.v2{
+        background-image: url('../images/whitelabel/thumb2.jpg');
+      }
+      &.v3{
+        background-image: url('../images/whitelabel/thumb3.jpg');
+      }
+      .titulo{
+        width: 100%;
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        padding: 10px;
+        background-color: $brand-primary;
+        z-index: 3;
+        @include transition-duration(1s);
+        @include transition-property(bottom);
+        /* Small devices (desktops, 992px and up) */
+         @media (min-width: $screen-md-min) {
+           bottom: -40px;
+         }
+      }
+      .play{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        margin-left: -25px;
+        z-index: 2;
+        @include transition-duration(1s);
+        @include transition-property(all);
+        /* Small devices (desktops, 992px and up) */
+         @media (min-width: $screen-md-min) {
+           bottom: -40px;
+           top: 35px;
+         }
+        svg{
+          width: 100%;
+          height: auto;
+
+        }
+      }
+      &:hover{
+        .titulo{
+            bottom: 0;
+        }
+        .play{
+          top: -48px;
+          margin-left: -90px;
+          width: 180px;
+        }
+      }
+    }
+
+    /* Small devices (tablets, 768px and up) */
+     @media (min-width: $screen-sm-min) {
+       &:first-child{
+         padding-right:0;
+         padding-left: 40px;
+       }
+       &:last-child{
+         padding-left:0;
+         padding-right: 40px;
+       }
+      }
+  }
+}
+.produto{
+  background-color: $gray-lighter;
+  .apresentacao{
+    padding-top: 40px;
+
+    .row{
+      padding-bottom: 40px;
+      /* Small devices (tablets, 768px and up) */
+       @media (min-width: $screen-sm-min) {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+    }
+    .item{
+      padding-bottom: 20px;
+      img{
+        margin: 0 auto;
+        margin-bottom: 6px;
+      }
+    }
+  }
+  .descontos{
+    background-color: $brand-primary;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 100%;
+    color: $body-bg;
+    img{
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+    .juridico{
+      font-size: 10px;
+      span{
+        margin-right: 4px;
+        font-size: 5px;
+      }
+    }
+  }
+}
+.produtoMaisInfos{
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background-color: $gray-lighter;
+  h2{
+    text-transform: uppercase;
+    color: $brand-primary;
+  }
+  td{
+    vertical-align: middle !important;
+    //padding: 20px !important;
+  }
+  tr>td:last-child{
+    text-align: center;
+    background-image: url('../images/whitelabel/sombra.png');
+    background-position: left;
+    background-repeat: repeat-y;
+  }
+  .cabecalho{
+    background-color: transparent !important;
+    border-top: none;
+    padding-bottom: 20px !important;
+    td{
+      background-image: none !important;
+    }
+
+  }
+}
+.parceiros{
+  padding-top: 40px;
+  padding-bottom: 60px;
+  /* Small devices (tablets, 768px and up) */
+   @media (min-width: $screen-sm-min) {
+
+       padding-left: 40px;
+
+       padding-right: 40px;
+   }
+  h2{
+    padding-bottom: 40px;
+    text-transform: uppercase;
+    color: $brand-primary;
+  }
+  .box{
+    padding: 10px;
+
+    .thumb{
+      background-color: $gray-lighter;
+      border: 1px solid $gray-light;
+      padding: 10px;
+      img{
+        border: 4px solid white;
+        width: 100%;
+      }
+    }
+  }
+}
