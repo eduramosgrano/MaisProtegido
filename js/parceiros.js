@@ -27,6 +27,14 @@ jQuery(document).ready(function($) {
 
   });
 
+  $(document).keyup(function(e) {
+  if (e.keyCode === 27) {
+      boxVideo.removeClass('active');
+      boxVideo.removeClass('zoomIn');
+      $(".videoYoutube").attr('src','');
+    }
+  });
+
   btnResgate.on('click', function(){
     //alert(loginPos);
     $("html, body").animate({ scrollTop: loginPos.top }, "slow");

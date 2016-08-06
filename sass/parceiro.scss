@@ -31,26 +31,30 @@ html,body{
     margin-top: 0;
     padding-top: 3px;
     padding-bottom: 3px;
-    background-color: $gray-lighter;
-    .brand-cliente, .brand-intel{
-      img{
-        //max-height: 115px;
+        .row{
+          padding-top: 50px;
+        }
+    //background-color: $gray-lighter;
+        .brand-parceiro{
+          img{
+            margin: 0 auto;
+
+          }
+        }
+        .brand-maisprotegido{
+          img{
+            margin: 0 auto;
+
+          }
+        }
+        .brand-intel{
+          img{
+            margin: 0 auto;
+
+          }
+        }
+
       }
-    }
-    .brand-cliente{
-      padding: 15px;
-      img{
-        float: right;
-      }
-    }
-  }
-  .chamada{
-    position: relative;
-    z-index: 1;
-    h1{
-      color: $brand-primary;
-    }
-  }
 }
 
 .videoBox{
@@ -72,6 +76,10 @@ html,body{
     position: absolute;
     right: 0;
     top: 0;
+    background-color: $brand-primary;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    @include opacity(0.5);
 
     svg{
       width: 100%;
@@ -298,6 +306,13 @@ html,body{
         position: absolute;
         bottom: 20px;
         right: 20px;
+      }
+      .btn-cadastre{
+        right: 10px;
+        /* Small devices (tablets, 768px and up) */
+         @media (min-width: $screen-sm-min) {
+           right: 20px;
+         }
       }
     }
   }

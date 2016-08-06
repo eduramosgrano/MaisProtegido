@@ -25,4 +25,11 @@ jQuery(document).ready(function($) {
 
   });
 
+  $(document).keyup(function(e) {
+  if (e.keyCode === 27) {
+      boxVideo.removeClass('active');
+      boxVideo.removeClass('zoomIn');
+      $(".videoYoutube").attr('src','');
+    }
+  });
 });
