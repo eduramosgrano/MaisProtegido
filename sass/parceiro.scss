@@ -28,12 +28,51 @@ html,body{
   background-size: cover;
   background-position: center;
   .header{
-    position: absolute;
-    text-align: center;
-    margin-top: 3%;
-    
-  }
+    margin-top: 0;
+    padding-top: 3px;
+    padding-bottom: 3px;
+        .row{
+          //padding-top: 50px;
+        }
+    //background-color: $gray-lighter;
+        .brand-parceiro{
+          padding-top: 32px;
+          /* Small devices (desktops, 992px and up) */
+           @media (min-width: $screen-md-min) {
+            img{
+              float: right;
+            }
+           }
+          img{
+            margin: 0 auto;
+
+          }
+        }
+        .brand-maisprotegido{
+          img{
+            margin: 0 auto;
+            max-height: 256px;
+
+          }
+        }
+        .brand-intel{
+          padding-top: 69px;
+          /* Small devices (tablets, 768px and up) */
+           @media (min-width: $screen-sm-min) {
+
+              img{
+                float: left;
+              }
+           }
+          img{
+            margin: 0 auto;
+
+          }
+        }
+
+      }
 }
+
 .videoBox{
   position: absolute;
   width: 100%;
@@ -199,6 +238,9 @@ html,body{
       margin: 0 auto;
       margin-bottom: 20px;
     }
+    .btn{
+      margin-bottom: 20px;
+    }
     .juridico{
       font-size: 10px;
       span{
@@ -236,7 +278,11 @@ html,body{
 
   }
 }
-.parceiros{
+.login{
+  background-image: url('../images/bg2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding-top: 40px;
   padding-bottom: 60px;
   /* Small devices (tablets, 768px and up) */
@@ -249,18 +295,40 @@ html,body{
   h2{
     padding-bottom: 40px;
     text-transform: uppercase;
-    color: $brand-primary;
+    color: $body-bg;
   }
   .box{
     padding: 10px;
 
-    .thumb{
-      background-color: $gray-lighter;
-      border: 1px solid $gray-light;
-      padding: 10px;
-      img{
-        border: 4px solid white;
+
+    .box-inner{
+      background-color: $body-bg;
+      padding: 20px;
+      position: relative;
+      padding-top: 89px;
+      padding-bottom: 89px;
+      min-height: 336px;
+      .header{
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
+        background-color: $gray-lighter;
+        margin: 0;
+        padding: 22px;
+      }
+      .btn{
+        //float: right;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+      }
+      .btn-cadastre{
+        right: 10px;
+        /* Small devices (tablets, 768px and up) */
+         @media (min-width: $screen-sm-min) {
+           right: 20px;
+         }
       }
     }
   }

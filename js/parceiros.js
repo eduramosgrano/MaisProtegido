@@ -3,7 +3,9 @@ jQuery(document).ready(function($) {
   var video = $('.thumb'),
       boxVideo = $('.videoBox'),
       btnClose = $('.videoBox .close'),
-      container = $('.whitelabel'),
+      container = $('.parceiro'),
+      loginPos = $('.login').offset(),
+      btnResgate = $('.btnLoginScroll'),
       ytcode = "",
       btnytcode ="";
 
@@ -32,4 +34,10 @@ jQuery(document).ready(function($) {
       $(".videoYoutube").attr('src','');
     }
   });
+
+  btnResgate.on('click', function(){
+    //alert(loginPos);
+    $("html, body").animate({ scrollTop: loginPos.top }, "slow");
+  });
+
 });
